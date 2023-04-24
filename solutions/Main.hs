@@ -6,5 +6,9 @@ import A3
 import A4
 import A5
 
+rrr :: Player -> IO ()
+rrr = playDo _EMPTY_BOARD_
+
 main :: IO ()
-main = putStrLn "Welcome to Part I of EMURGO Academy's Haskell course!"
+main =  firstPlayer >>= \sss -> rrr sss >> return ()
+
